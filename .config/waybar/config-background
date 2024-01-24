@@ -6,13 +6,13 @@
   //"width": 1350, // Waybar width
   // Choose the order of the modules idle_inhibitor
   "modules-left": [
-    "custom/launcher",
+    "clock",
     "tray",
     "custom/swap",
     "custom/cava-internal"
   ],
   "modules-center": [
-    "clock"
+    "custom/command"
   ],
   "modules-right": [
     "custom/weather",
@@ -138,9 +138,9 @@
     "align": 0,
     "rotate": 0,
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%H:%M,       %d %b %a}",
-    // "format": "{:%H:%M}",
-    // "format-alt": "{:%a %b %d %G}",
+    // "format": "{:%H:%M,       %d %b %a}",
+    "format": "{:%H:%M}",
+    "format-alt": "{:%a %b %d %G}"
   },
   "cpu": {
     // "interval": 5,
@@ -259,6 +259,12 @@
   "custom/power": {
     "format": " ⏻ ",
     "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu -theme ~/.config/rofi/launchers/type-1/style-14.rasi",
+  },
+  "custom/command": {
+    "format": "Application Find",
+    "tooltip": false,
+    "on-click": "rofi -show drun -show-icons -theme ~/.config/rofi/launchers/type-1/style-14.rasi"
+
   },
   "custom/launcher": {
     "format": "",

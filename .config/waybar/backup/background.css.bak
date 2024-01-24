@@ -115,6 +115,7 @@
  #clock,
  #custom-swap,
  #custom-background,
+ #custom-command,
  #custom-cava-internal,
  #battery,
  #cpu,
@@ -149,9 +150,16 @@
  
  #custom-cava-internal {
      border-radius: 10px;
-     margin-left: 8px;
      color: @mauve;
  }
+
+ #custom-command{
+    color: @base;
+    background-color: @mauve;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
  
  #mpd {
      border-radius: 10px;
@@ -195,7 +203,7 @@
 
  #custom-weather{
 
-    background: none;
+    border-radius: 10px;
     margin-right: 8px;
 
 }
@@ -209,9 +217,10 @@
  
  #clock {
      /* background-color:#a3be8c; */
-     color: @sky;
+     color: @base;
+     background-color: @mauve;
      border-radius: 10px;
-     margin: 8px 10px;
+     margin-left: 15px;
  }
  
  #backlight {
