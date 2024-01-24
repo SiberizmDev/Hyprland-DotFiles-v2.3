@@ -1,0 +1,20 @@
+{
+  "include": "~/.config/hypr/waybar/modules",
+  "layer": "top",
+  // "mode": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "fixed-center": true,
+  "ipc": true,
+  // "hyprland/window"
+  "modules-left": ["custom/menu", "tray", "custom/playerctl", "custom/playerlabel"],
+  "modules-center": [ "custom/cpuicon", "cpu", "custom/diskicon","disk", "custom/memicon","memory"],
+  "modules-right": [ "custom/weather" ,"custom/volicon","pulseaudio", "custom/blicon","backlight", "custom/baticon","battery", "custom/neticon","network", "custom/clockicon","clock", "custom/power"],
+  "hyprland/window": {
+    "max-length": 15
+  },
+  "custom/spotify": {
+    "max-length": 25
+  },
+}

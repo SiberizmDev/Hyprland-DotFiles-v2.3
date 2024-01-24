@@ -1,0 +1,301 @@
+* {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 11px;
+    /* color: #3A3B3C; */
+}
+
+#waybar {
+    /* Transparent waybar. Make sure to comment out background-color: and border: */
+    /* background: rgba(16, 16, 19, 0.5); */
+    border-bottom: 1px solid #343A40;
+    border-radius: 0px;
+    background-color: rgba(17, 17, 27, 1);
+    /* border: 2px solid #313244; */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+#backlight,
+#battery,
+#clock,
+#cpu,
+#custom-cpuicon,
+#custom-volicon,
+#custom-neticon,
+#custom-memicon,
+#custom-diskicon,
+#custom-blicon,
+#custom-baticon,
+#custom-clockicon,
+#custom-micicon,
+#disk,
+#memory,
+#tray,
+#pulseaudio,
+#bluetooth,
+#cutom-terminal,
+#window,
+#custom-menu,
+#custom-spotify,
+#custom-power,
+#custom-weather,
+#custom-updater,
+#custom-keybindings,
+#custom-hyprpicker,
+#custom-playerctl,
+#pulseaduio.microphone,
+#taskbar,
+#custom-cycle_wall,
+#workspaces,
+#network {
+    padding: 6px 6px;
+    border-radius: 10px;
+    margin:5px 0px;
+    background: #1E1E2E;
+    color: #fff;
+}
+
+#custom-menu,
+#workspaces,
+#custom-spotify,
+#cpu,
+#disk,
+#memory,
+#pulseaudio,
+#custom-weather,
+#backlight,
+#battery,
+#network,
+#custom-playerctl,
+#tray,
+#custom-updater,
+#clock {
+
+    padding: 0 6px;
+    margin-right: 6px;
+
+}
+
+#custom-playerctl{
+
+    font-size: 15px;
+
+}
+
+#custom-playerlabel,
+#custom-playerctl{
+
+    color: #86b4fa;
+
+}
+
+#workspaces {
+    color: #F9E2AF;
+    margin-left: 6px;
+}
+
+#window {
+
+    padding: 7px 15px;
+
+}
+
+#custom-blicon {
+
+    color: #E29086;
+
+}
+
+#custom-baticon {
+
+    color: #B4A1DB;
+
+}
+
+@keyframes blink {
+    to {
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background: rgba(249, 226, 175, .7);
+    color: #f38ba8;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu,
+#disk,
+#memory,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#clock {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#custom-cpuicon {
+
+    color: #89dceb;
+
+}
+
+#custom-weather{
+
+	background: none;
+
+}
+
+#custom-cpuicon,
+#custom-volicon,
+#custom-neticon,
+#custom-memicon,
+#custom-diskicon,
+#custom-blicon,
+#custom-clockicon,
+#custom-micicon,
+#custom-baticon {
+
+    border-radius: 10px 0px 0px 10px;
+    background-color: #181825;
+
+}
+
+#custom-memicon {
+
+    color: #eba0ac;
+
+}
+
+#custom-diskicon {
+
+    color: #b4befe;
+
+}
+
+#tray {
+    margin-left: 6px;
+    color: #b4befe;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#workspaces button {
+    background: rgba(0, 0, 0, 0.0);
+    color: #d9e0ee;
+    /* border: 2px solid #3a3b3c; */
+    margin-right: 2px;
+}
+
+#workspaces button.active {
+    color: rgb(249, 226, 175);
+}
+
+#custom-menu {
+    font-size: 15px;
+    margin: 0px 0px 1px 0px;
+    border-radius: 0px 10px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    color: #86b4fa;
+}
+
+#taskbar{
+
+    margin-left: 6px;
+
+}
+
+#custom-power {
+	color: #101013;
+	padding: 4px 6px 0px 6px;
+    background-color: #f38ba8;
+    margin-right: 6px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+#custom-updater {
+    color: #e6ed7b;
+}
+
+#custom-uptime {
+    color: #e6ed7b;
+}
+
+#custom-cycle_wall {
+    color: #89dceb;
+}
+
+#custom-vpn_check {
+    color: #a6e3a1;
+}
+
+#custom-cputemp {
+    color: #86b4fa;
+}
+
+#custom-keybindings {
+    color: #86b4fa;
+    font-size: 24px;
+}
+
+#custom-spotify {
+    color: #fff;
+    padding: 0 10px;
+}
+
+#pulseaudio {
+    color: #fff;
+}
+
+#custom-volicon,
+#custom-micicon,
+#custom-clockicon {
+
+    color: #74DD91;
+
+}
+
+#pulseaudio.bluetooth {
+    color: #f5c2e7;
+}
+
+#pulseaudio.muted {
+
+    color: #cdd6f4;
+}
+#custom-neticon{
+
+    color: #89b4fa;
+
+}
+
+#network.disconnected,
+#network.disabled {
+
+    color: #cdd6f4;
+}

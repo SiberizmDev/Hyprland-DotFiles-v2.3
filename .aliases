@@ -1,0 +1,80 @@
+# Config Files
+
+alias nvim="NVIM_APPNAME="CatNvim" nvim"
+
+alias confa="nvim ~/.aliases"
+alias confb="nvim ~/.bashrc"
+alias confh="nvim ~/.config/hypr/hyprland.conf"
+alias confwb="nvim ~/.config/hypr/waybar/config"
+
+
+# Sudo
+
+alias s="sudo"
+alias se="sudoedit"
+alias sc="sudo systemctl"
+alias reb="reboot"
+
+# Systemctl
+
+alias sce="sudo systemctl enable"
+alias scen="sudo systemctl enable --now"
+alias scd="sudo systemctl disable"
+alias scs="systemctl status"
+
+
+# Application Conf
+
+alias dl="sudo pacman -S"
+alias src="sudo pacman -Ss"
+alias rv="sudo pacman -R"
+alias up="sudo pacman -Syu"
+alias upr="sudo pacman -Syy"
+
+alias dly="yay -S"
+alias srcy="yay -Ss"
+alias upy="yay -Syu"
+
+alias dlf="flatpak install"
+alias srcf="flatpak search"
+alias rvf="flatpak remove"
+alias upf="flatpak update"
+
+alias np="pnpm"
+
+
+# Mod
+
+alias mod="sudo chmod +x"
+alias ls="ls -l --color"
+
+
+# App Start
+
+alias st="syncthing"
+alias mc="java -jar ~/Portable/SKlauncher\ 3.0.4.jar"
+alias screen="scrcpy -b 8M --crop 720:1500:0:195 --v4l2-sink=/dev/video1 --v4l2-buffer 0"
+alias screenr="scrcpy -b 8M -Sw --crop 720:1500:0:195 --v4l2-sink=/dev/video1 --v4l2-buffer 0"
+alias vid="sudo modprobe v4l2loopback"
+alias v="python -m venv path/to/venv && source path/to/venv/bin/activate"
+alias vd="deactivate"
+
+
+# Localhost
+
+alias locst="sudo /opt/lampp/lampp start"
+alias apst="sudo /opt/lampp/lampp startmysql"
+alias myst="sudo /opt/lampp/lampp startmysql"
+alias ftpst="sudo /opt/lampp/lampp startftp"
+
+alias locsp="sudo /opt/lampp/lampp stop"
+alias apsp="sudo /opt/lampp/lampp stopapache"
+alias mysp="sudo /opt/lampp/lampp stopmysql"
+alias ftpsp="sudo /opt/lampp/lampp stopftp"
+
+alias locrl="sudo /opt/lampp/lampp reload"
+alias aprl="sudo /opt/lampp/lampp reloadapache"
+alias myrl="sudo /opt/lampp/lampp reloadmysql"
+alias ftprl="sudo /opt/lampp/lampp reloadftp"
+
+alias res="sudo /opt/lampp/lampp restart"
