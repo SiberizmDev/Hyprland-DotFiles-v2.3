@@ -65,6 +65,17 @@
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
   },
+  "backlight": {
+    "format": " 󰃠  {percent}%",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "on-scroll-up": "brightnessctl set 5%+",
+    "on-scroll-down": "brightnessctl set 5%-",
+    "min-length": 6
+  },
   "custom/swap": {
     "on-click": "~/.config/waybar/scripts/swap.sh",
     "tooltip": "Swap between waybar configs",
@@ -149,12 +160,12 @@
     "format": "{usage}%",
   },
   "pulseaudio": {
-    "format": "{volume}%",
+    "format": " 󰕾  {volume}%",
     /*"format": "{icon} {volume}",*/
     /*"format": "{icon}",*/
-    "format-muted": "Mute",
-    "format-bluetooth": "{volume}%",
-    "format-bluetooth-muted": "Mute",
+    "format-muted": " 󰖁  Mute",
+    "format-bluetooth": "󰕾  {volume}%",
+    "format-bluetooth-muted": " 󰖁  Mute",
     "format-source": "{volume}",
     "format-source-muted": "",
     "format-icons": {
