@@ -269,18 +269,18 @@
   },
   "custom/power": {
     "format": " ⏻ ",
-    "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu -theme ~/.config/rofi/launchers/type-1/style-14.rasi",
+    "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu -theme ~/.config/rofi/launchers/type-1/style-7.rasi,
   },
   "custom/command": {
     "format": "Application Find",
     "tooltip": false,
-    "on-click": "rofi -show drun -show-icons -theme ~/.config/rofi/launchers/type-1/style-14.rasi"
+    "on-click": "rofi -show drun -show-icons -theme ~/.config/rofi/launchers/type-1/style-7.rasi"
 
   },
   "custom/launcher": {
     "format": "",
     "tooltip": false,
-    "on-click": "rofi -show drun -show-icons -theme ~/.config/rofi/launchers/type-1/style-14.rasi",
+    "on-click": "rofi -show drun -show-icons -theme ~/.config/rofi/launchers/type-1/style-7.rasi,
     "on-click-right": "$HOME/.config/hypr/scripts/menu",
   }
 }
