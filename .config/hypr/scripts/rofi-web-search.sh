@@ -20,18 +20,14 @@
 declare -A URLS
 
 URLS=(
-  ["farside"]="https://farside.link/whoogle/search?q="
-  ["youtube"]="https://www.youtube.com/results?search_query="
-  ["duckduckgo"]="https://www.duckduckgo.com/?q="
+  ["YouTube"]="https://www.youtube.com/results?search_query="
+  ["DuckDuckGo"]="https://www.duckduckgo.com/?q="
   ["imdb"]="http://www.imdb.com/find?ref_=nv_sr_fn&q="
-  ["google"]="https://www.google.com/search?q="
-  ["github"]="https://github.com/search?q="
-  ["seslisözlük"]="https://www.seslisozluk.net/"
-  ["wikipedia (en)"]="https://en.wikipedia.org/w/index.php?search="
-  ["wikipedia (tr)"]="https://tr.wikipedia.org/w/index.php?search="
-  ["youtube music"]="https://music.youtube.com/search?q="
-  ["chordify"]="https://chordify.net/search/"
-  ["ultimate guitar tab"]="https://www.ultimate-guitar.com/search.php?search_type=title&value="
+  ["Google"]="https://www.google.com/search?q="
+  ["GitHub"]="https://github.com/search?q="
+  ["Wikipedia (en)"]="https://en.wikipedia.org/w/index.php?search="
+  ["Wikipedia (tr)"]="https://tr.wikipedia.org/w/index.php?search="
+  ["YouTube Music"]="https://music.youtube.com/search?q="
 )
 
 # List for rofi
@@ -44,10 +40,10 @@ gen_list() {
 
 main() {
   # Pass the list to rofi
-  platform=$( (gen_list) | rofi -dmenu -matching fuzzy -no-custom -location -theme ~/.config/rofi/launchers/type-1/style-14.rasi 0 -p "Search > " )
+  platform=$( (gen_list) | rofi -dmenu -matching fuzzy -no-custom -location -theme ~/.config/rofi/launchers/type-1/style-7.rasi 0 -p "Search > " )
 
   if [[ -n "$platform" ]]; then
-    query=$( (echo ) | rofi  -dmenu -matching fuzzy -location -no-custom -location -theme ~/.config/rofi/launchers/type-1/style-14.rasi 0 -p "Query > " )
+    query=$( (echo ) | rofi  -dmenu -matching fuzzy -location -theme ~/.config/rofi/launchers/type-1/style-7.rasi 0 -p "Query > " )
 
     if [[ -n "$query" ]]; then
       url=${URLS[$platform]}$query
@@ -63,4 +59,4 @@ main() {
 
 main
 
-exit 0 
+exit 0
