@@ -107,6 +107,36 @@ sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
 ```
 
-# Screenshot
+
+# Spicetify Config
+
+- Authorization Settings
+
+```
+sudo chmod a+wr /opt/spotify
+
+sudo chmod a+wr /opt/spotify/Apps -R
+```
+
+- Backup Apply Enable Devtools
+
+```
+spicetify backup apply enable-devtools
+```
+
+- Apply Theme
+
+```
+spicetify config current_theme catppuccin
+spicetify config color_scheme mocha
+spicetify config inject_css 1 inject_theme_js 1 replace_colors 1 overwrite_assets 1
+spicetify apply
+```
+
+# Screenshot Desktop
 
 ![SS](SS.png)
+
+# Screenshot Spotify
+
+![SS](Spotify.png)

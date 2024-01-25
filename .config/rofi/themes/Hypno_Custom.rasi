@@ -19,7 +19,7 @@
   text:       #dfdfdf;
   text-alt:   #b2b2b2;
   fg:         #abb2bf;
-  bg:         #101013;
+  bg:         #24273A;
 
   spacing: 0;
   background-color: transparent;
@@ -31,7 +31,7 @@
 window {
   transparency: "real";
   fullscreen: true;
-  background-color: #101013dd;
+  background-color: #101013;
 }
 
 mainbox {
