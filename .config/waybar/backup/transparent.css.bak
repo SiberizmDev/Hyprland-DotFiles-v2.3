@@ -125,6 +125,7 @@
  #custom-keyboard-layout,
  #backlight,
  #network,
+ #pulseaudio.microphone,
  #pulseaudio,
  #mode,
  #tray,
@@ -230,6 +231,12 @@
      /* border-bottom: 2px solid @yellow; */
      border-radius: 10px 0 0 10px;
  }
+
+ #pulseaudio.microphone {
+    color: @yellow;
+    /* border-bottom: 2px solid @yellow; */
+    border-radius: 10px 0 0 10px;
+}
  
  #battery {
      color: #d8dee9;

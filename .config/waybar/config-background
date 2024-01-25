@@ -16,10 +16,9 @@
   ],
   "modules-right": [
     "custom/weather",
-    "backlight",
+    "pulseaudio#microphone",
     "pulseaudio",
-    "custom/keyboard-layout",
-    "temperature",
+    "backlight",
     "memory",
     "battery",
     "network",
@@ -188,6 +187,18 @@
     "on-scroll-down": "sh ~/.config/hypr/scripts/volume --dec",
     "smooth-scrolling-threshold": 1
   },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "   {volume}%",
+    "format-source-muted": "   Mute",
+    "on-click": "pamixer --default-source -t",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
+  },
+
   // "clock": {
   //     "format": "  {:%H:%M:%S}",
   //     "format-alt": "  {:%A, %B %d, %Y (%R)}",

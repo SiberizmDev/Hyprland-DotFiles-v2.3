@@ -16,10 +16,9 @@
   ],
   "modules-right": [
     "custom/weather",
-    "backlight",
+    "pulseaudio#microphone",
     "pulseaudio",
-    "custom/keyboard-layout",
-    "temperature",
+    "backlight",
     "memory",
     "battery",
     "network",
@@ -188,6 +187,18 @@
     "on-scroll-down": "sh ~/.config/hypr/scripts/volume --dec",
     "smooth-scrolling-threshold": 1
   },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "   {volume}%",
+    "format-source-muted": "   Mute",
+    "on-click": "pamixer --default-source -t",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
+  },
+
   // "clock": {
   //     "format": "  {:%H:%M:%S}",
   //     "format-alt": "  {:%A, %B %d, %Y (%R)}",
@@ -269,7 +280,7 @@
   },
   "custom/power": {
     "format": " ⏻ ",
-    "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu -theme ~/.config/rofi/launchers/type-1/style-7.rasi,
+    "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
   },
   "custom/command": {
     "format": "Application Find",
@@ -280,7 +291,7 @@
   "custom/launcher": {
     "format": "",
     "tooltip": false,
-    "on-click": "rofi -show drun -show-icons -theme ~/.config/rofi/launchers/type-1/style-7.rasi,
+    "on-click": "rofi -show drun -show-icons -theme ~/.config/rofi/launchers/type-1/style-7.rasi",
     "on-click-right": "$HOME/.config/hypr/scripts/menu",
   }
 }
