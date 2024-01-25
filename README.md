@@ -6,7 +6,7 @@ git clone https://github.com/AhmetinzmSec/Hyprland-DotFiles-v2.3.git
 
 ```cd Hyprland-DotFiles-v2.3```
 
-Run the install file: `./Install.sh`
+Run the install file (Beta): `./Install.sh`
 
 or install it manually:
 
@@ -91,7 +91,7 @@ sudo flatpak override --env=ICON_THEME=Dracula
 
 # Change System Theme
 
-This process is required to activate qt5ct in the system and to apply the GTK Theme. We can start editing the environment side by typing the command `sudo nano /etc/environment`
+- This process is required to activate qt5ct in the system and to apply the GTK Theme. We can start editing the environment side by typing the command `sudo nano /etc/environment`
 
 ```
 ...
@@ -99,6 +99,41 @@ GTK_THEME=Sweet-Ambar-Blue-GTK
 QT_QPA_PLATFORMTHEME=qt5ct
 ...
 ```
+
+# Change Plasma Theme
+
+This method is required for our friends who will use KDE Plasma applications to use a fully compatible theme. Those who are not obsessed with the theme can skip this step.
+
+Now let's install the KDE Plasma theme. Catppuccin Theme is not officially available in the Plasma store. I left the theme in the `.themes` folder for you. However, I leave the official GitHub repo for you. You can apply the specified path on both sides
+
+Please note that you must first download the KDE Plasma desktop environment and log in to KDE.
+
+- Let's Apply Plasma Catppuccin Theme:
+
+```
+cd ~/.themes/catppuccin-kde
+```
+
+or
+
+```
+git clone https://github.com/catppuccin/kde.git
+
+cd kde
+```
+
+The next step is the same for both methods.
+
+```./install.sh```
+
+After the script runs, it will offer you options. Respectively:
+
+Modern Icons,
+Mocha,
+Mauve
+
+make your choices. And finally it will ask you if you want to apply the theme. Specify that you want to apply the theme
+
 
 # Change Shell
 
