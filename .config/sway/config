@@ -10,11 +10,11 @@ include $HOME/.config/sway/config.d/*
 # xwayland disable
 
 # Set the background image
-output * bg ~/.config/backgrounds/march7.jpg fill
+output * bg ~/.config/hypr/bg/aesthetic.jpg fill
 
 # Set the initial keyboard layout
 input * {
-    xkb_layout "fr,us"
+    xkb_layout "tr"
     xkb_options "grp:alt_shift_toggle"
 }
 # For configuration Laptop Right, Monitor Left
