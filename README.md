@@ -69,9 +69,7 @@ Let's install our software:
 
 ```
 [Arch Linux]
-sudo pacman -Syy
-
-yay -S nm-connection-editor nwg-darwer cava mpd sway tmux hyprland waybar grimblast sddm brightnessctl playerctl swaylock-effects pamixer rofi-power-menu wf-recorder btop zsh oh-my-zsh-powerline-theme-git ark unrar zip unzip pavucontrol xdg-desktop-portal-wlr neovim vim nano git wget swaybg dunst dolphin kvantum kate appimagelauncher-bin noto-fonts-emoji wl-clipboard xfce4-appfinder wofi catfish firefox kitty polkit-gnome gnome-keyring ntfs-3g cliphist qt5ct lxappearance tesseract-data-tur tesseract-data-eng tesseract-data-rus visual-studio-code-bin spicetify-cli jdk-openjdk jdk11-openjdk jdk8-openjdk discord bitwarden flatpak gimp kitty kdenlive inkscape konsole neofetch github-desktop-bin webapp-manager steam virt-manager qemu-desktop dnsmasq iptables-nft go yarn npm python-pip obsidian rofi syncthing portmaster-stub-bin
+yay -S nm-connection-editor nwg-darwer cava mpd sway tmux hyprland waybar grimblast sddm brightnessctl playerctl swaylock-effects pamixer rofi-power-menu wf-recorder btop zsh oh-my-zsh-powerline-theme-git ark unrar zip unzip pavucontrol xdg-desktop-portal-wlr neovim vim nano git wget swaybg dunst dolphin kvantum kate appimagelauncher-bin noto-fonts-emoji wl-clipboard xfce4-appfinder wofi catfish firefox kitty polkit-gnome gnome-keyring ntfs-3g cliphist qt5ct lxappearance tesseract-data-tur tesseract-data-eng tesseract-data-rus visual-studio-code-bin spicetify-cli jdk-openjdk jdk11-openjdk jdk8-openjdk discord bitwarden flatpak gimp kitty kdenlive inkscape konsole neofetch github-desktop-bin webapp-manager steam virt-manager qemu-desktop dnsmasq iptables-nft go yarn npm python-pip
 ```
 
 # Optional Softwares
@@ -136,6 +134,20 @@ Mauve
 
 make your choices. And finally it will ask you if you want to apply the theme. Specify that you want to apply the theme
 
+- Let's Change SDDM Theme
+
+I am sharing the real repo of SDDM Theme with you. Please download from the official repo to respect the effort:
+
+```
+git clone https://github.com/keyitdev/sddm-astronaut-theme.git
+
+sudo cp -r sddm-astronaut-theme/ /usr/share/themes/
+
+echo "[Theme]
+Current=sddm-astronaut-theme
+CursorTheme=Adwaita" | sudo tee /etc/sddm.conf
+
+```
 
 # Change Shell
 
@@ -164,10 +176,9 @@ spicetify backup apply enable-devtools
 - Apply Theme
 
 ```
-spicetify config current_theme catppuccin
-spicetify config color_scheme mocha
-spicetify config inject_css 1 inject_theme_js 1 replace_colors 1 overwrite_assets 1
-spicetify apply
+ spicetify config current_theme Bloom color_scheme dark
+ spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
+ spicetify apply
 ```
 
 # Screenshot Desktop
